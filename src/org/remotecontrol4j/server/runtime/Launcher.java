@@ -21,7 +21,7 @@ public class Launcher
 	 * @param cmd
 	 * @throws Exception
 	 */
-	public static String  run(final String cmd) throws Exception{
+	public static String run(final String cmd) throws Exception{
 		StringBuilder msgBuilder = new StringBuilder();
 		Process process = null;
 		InputStream inputStream = null;
