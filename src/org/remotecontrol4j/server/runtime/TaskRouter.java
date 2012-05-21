@@ -36,6 +36,9 @@ public class TaskRouter
 		}
 	}	
 	
+	/**
+	 * 单线程执行
+	 */
 	private static <P extends Object> void runSingle(Class<? extends Task> clazz,int taskCount,P... params) throws Exception{
 		List<Task> taskList = getTaskList(clazz,taskCount,params);
 		for(Task task : taskList){
@@ -43,6 +46,9 @@ public class TaskRouter
 		}
 	}
 	
+	/**
+	 * 多线程执行
+	 */
 	private static <P extends Object> void runMulti(Class<? extends Task> clazz,int taskCount,int threadCount,P... params) throws Exception {		
 		List<Task> taskList = getTaskList(clazz,taskCount,params);
 		List<Task>[] taskListPerThread = TaskRouter.distribute(taskList, threadCount);

@@ -1,12 +1,7 @@
 package org.remotecontrol4j.server.plugin;
 
-import java.util.concurrent.ExecutionException;
-
-import org.remotecontrol4j.server.meta.Host;
-import org.remotecontrol4j.server.meta.Result;
 import org.remotecontrol4j.server.runtime.Container;
 import org.remotecontrol4j.server.runtime.Executor;
-import org.remotecontrol4j.server.runtime.Launcher;
 import org.remotecontrol4j.server.runtime.OS;
 
 /**
